@@ -9,6 +9,12 @@ body {
     background-color: #ececfc;
 }
 
+.headline {
+    background-color: #1a1c44;
+    color: #FFF;
+    justify-content: center;
+}
+
 header {
     height: 100px;
     margin: auto;
@@ -130,8 +136,13 @@ main .container .curso .modulos-body .item.modulos {
     grid-row: 1 / 99;
     justify-content: center;
     background-color: #2f3136;
-    border-right: 1px solid #1e1e27;
     color: #f9f9f9;
+}
+
+main .container .curso .modulos-body .item.modulos.headline {
+    background-color: #1a1c44;
+    color: #FFF;
+    justify-content: center;
 }
 
 main .container .curso .modulos-body .item.status {
@@ -162,3 +173,4 @@ main .container .curso .modulos-body .item.link a {
 main .container .curso .modulos-body .exercicios-template:hover a {
     color: #f9f9f9;
 }
+
