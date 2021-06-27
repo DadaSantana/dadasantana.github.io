@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ececfc;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.tarja {
+    position: absolute;
+    width: 400px;
+    padding: 3px;
+    background-color: #3d7bc4;
+    box-shadow: 0px 0px 30px gray;
+    transform: rotate(-45deg);
+    left: -100px;
+    top: 50px;
+}
+
+.tarja_content {
+    color: #fff;
+    font-size: 25px;
+    text-align: center; 
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    padding: 30px;
+    border: 1px solid #FFF;
+}
+
+header {
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 5px solid #9b9cff;;
+    background-color: #1e1e27;
+}
+
+header .logo-animation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;    
+}
+
+header .logo-animation img {
+    position: absolute;
+    cursor: pointer;
+}
+
+header .logo-animation .img_parte1 {
+    max-width: 80px;
+}
+
+header .logo-animation .img_parte2 {
+    margin-top: -20px;
+    max-width: 70px;
+    transition: all 0.5s linear;    
+}
+
+header .logo-animation:hover .img_parte2 {
+    margin-top: -30px;
+}
+
+header .logo-animation .img_parte3 {
+    max-width: 80px;
+
+}
+
+header .logo-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+header .logo-title h1,
+header .logo-title h2 {
+    color: #f9f9f9;
+}
+
+header .logo-title h1 {
+    font-size: 30px;
+    
+}
+
+header .logo-title h2 {
+    font-size: 15px;
+}
+
+table {
+    display: block;
+    margin-bottom: 20px;
+}
+
+thead tr {
+    width: 100%;
+    background-color: rgb(10, 77, 122);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    height: 30px;
+}
+
+tbody tr {
+    background-color: rgb(228, 236, 241);
+}
+
+
+
+tbody tr:nth-child(even) {
+    background-color: rgb(181, 204, 219)
+}
+
+tbody tr:hover {
+    background-color: rgb(107, 112, 116);
+    color: #F9f9f9;
+    cursor: pointer;
+}
+
+th {
+    padding: 0 20px;
+}
+
+td {
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+a {
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: 200px;
+    background: linear-gradient(#e64b4b, #be3c3c);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 3px 2px 8px #666;
+}
+
+a:hover {
+    background: linear-gradient(#da4343, #8b2c2c);
+    
+}
