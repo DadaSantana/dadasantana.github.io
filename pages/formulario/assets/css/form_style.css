@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1100px;
+}
+
+.container .header_top {
+    height: 60px;
+    border-bottom: 7px solid #D0FF00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #666666;
+    font-size: 24px;
+}
+
+.container .header_login {
+    display: flex;
+    align-items: center;
+}
+
+.container .header_login p {
+    color: white;
+    margin-right: 5px;
+}
+
+.container .header_login input {
+    height: auto;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.container .header_login span {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.container .header_login .login_button {
+    display: flex;
+    align-items: center;
+    background-color: #666666;
+    padding: 5px;
+    cursor: pointer;  
+    height: 30px;  
+    margin-left: 5px;
+    border: none;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section .container {
+    background-color: #f5f5f5;
+    padding: 10px;
+    height: auto;
+}
+
+section h1, p {
+    color: #5c5c5c;
+}
+
+section h1 {
+    margin-bottom: 10px;
+}
+
+section p a {
+    text-decoration: underline;
+    color: #5c5c5c;
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    padding: 5px;
+
+}
+
+form .form_box_left,
+form .form_box_right {
+    flex: 1;
+}
+
+.form_box_right {
+    margin-left: 5px;
+}
+
+section form {
+    display: flex;
+    height: auto;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+    height: auto;
+    border: 1px solid #666666;
+    margin-bottom: 10px;
+}
+
+.datalist_detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dados_pessoais input,
+.aprendizado select {
+    margin-bottom: 10px;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #666666;
+    outline: none;
+}
+
+.datalist_detail p {
+    font-size: 10px;
+}
+
+section form .aprendizado .curso_dif_input {
+    display: flex;
+    align-items: center;
+}
+
+section form .aprendizado .curso_dif_input input {
+    margin-right: 10px;
+}
+
+.form_box_right textarea {
+    resize: none;
+    padding: 10px;
+    outline: none;
+}
+
+.form_box_right button {
+    margin-top: 20px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #666666;
+    color: white;
+    border: 1px solid #5c5c5c;
+    border-radius: 2px;
+}
+
+.form_box_right button:hover {
+    background-color: #D0FF00;
+    transition: all 0.3s linear;
+    color: #666666;
+}
+
+footer {
+    display: flex;
+    background-color: #666666;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container p {
+    color: #f5f5f5;
+}
