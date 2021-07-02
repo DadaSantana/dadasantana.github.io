@@ -84,7 +84,7 @@ header .logo-title h2 {
  
 }
 
-main .container .curso .curso-title {
+main .container .curso.html .curso-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +92,17 @@ main .container .curso .curso-title {
     border-bottom: 2px solid #7f7f7f;
     background-color: #0e0f25;
     margin-top: 10px;
+    color: #FFFFFF;
+}
+
+main .container .curso.js .curso-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2px solid #7f7f7f;
+    background-color: #0e0f25;
+    margin-top: 30px;
     color: #FFFFFF;
 }
 
