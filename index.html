@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
-    <title>3 em 1 - Exercicios Módulo 8</title>
+    <title>Alex Sant'ana - Portifolio B7Web</title>
 </head>
 <body>
     <header>
@@ -25,44 +25,232 @@
             <h2>Resolução de Exercícios e Projetos da plataforma b7web</h2>
         </div>
     </header>
+    <main>
+        <div class="container">
+            <!--Navegação-->
+            <section class="nav">
+                <div class="curso-title active-nav" onclick="tag(this, 1)">
+                    <i class="fas fa-code" style="margin-right: 10px; color:#dd4d25;"></i>
+                    <h3>HTML/CSS</h3>               
+                </div>
+                <div class="curso-title" onclick="tag(this, 2)">
+                    <i class="fab fa-js-square" style="margin-right: 10px; color:#f09f00;"></i>
+                    <h3>JavaScript</h3>
+                </div>  
+            </section>
 
-    <section class="scroll-page container">
-        <h1>Exercício JavaScript - Scroll </h1>
-
-        <div class="banners">
-            <div class="sliders">
-                <div class="slide" style="background-image: url('assets/images/banner1.jpg')"></div>
-                <div class="slide" style="background-image: url('assets/images/banner2.jpg')"></div>
-                <div class="slide" style="background-image: url('assets/images/banner3.jpg')"></div>
-            </div>
+            <!--Curso HTML-->
+            <section class="curso html">
+                <!--HeadLine-->
+                <div class="modulos-body">
+                    <div class="item modulos headline">
+                        <h3>Módulos:</h3>
+                    </div>
+                    <div class="exercicios-template ">
+                        <div class="item status headline">
+                            <h3>Status:</h3>
+                        </div>
+                        <div class="item descripton headline">
+                            <h3>Descrição:</h3>
+                        </div>
+                        <div class="item link headline">
+                            <h3>Links:</h3>
+                        </div> 
+                    </div>                   
+                </div> 
+                <!--Módulo 7-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 7</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Site com Flexbox: Projeto MediCenter</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/medicenter/index.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div> 
+                </div>               
+                <!--Módulo 8-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 8</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status unfinished">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Página de Tributo</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="">Conteúdo em desenvolvimento</a>
+                        </div> 
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Formulário de Pesquisa</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/formulario/index.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status unfinished">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Página de Apresentação (Landing Page)</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="">Conteúdo em desenvolvimento</a>
+                        </div> 
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Clone do Google</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/clone-google/index.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status unfinished">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Clone dos resultados do Google</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="">Conteúdo em desenvolvimento</a>
+                        </div> 
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>3 em 1 - Tabela Zebra, Tarja de Canto e Botão com Link</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/tabela_tarja_botao/3em1.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div>            
+                </div>
+                <!--Módulo 9-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 9</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Projeto: Tesla (Devsla)</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/devsla/index.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div>                   
+                </div>
+                <!--Módulo 10-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 10</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status unfinished">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Projeto: Site AWAX</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/awax/home.html" target="_blank">Conteúdo em desenvolvimento</a>
+                        </div> 
+                    </div>                   
+                </div>
+                <!--Módulo 14-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 14</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Projeto: Starbucks (com Flexbox e Grid)</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/starbucks/index.html">Acessar conteúdo</a>
+                        </div> 
+                    </div>                   
+                </div> 
+            </section>
+            <!--Curso JavaScript-->
+            <section class="curso js">
+                <!--HeadLine-->
+                <div class="modulos-body">
+                    <div class="item modulos headline">
+                        <h3>Módulos:</h3>
+                    </div>
+                    <div class="exercicios-template ">
+                        <div class="item status headline">
+                            <h3>Status:</h3>
+                        </div>
+                        <div class="item descripton headline">
+                            <h3>Descrição:</h3>
+                        </div>
+                        <div class="item link headline">
+                            <h3>Links:</h3>
+                        </div> 
+                    </div>                   
+                </div> 
+                <!--Módulo 2-->
+                <div class="modulos-body">
+                    <div class="item modulos">
+                        <h3>Módulo 2</h3>
+                    </div>
+                    <div class="exercicios-template">
+                        <div class="item status sucess">
+                            <i class="fas fa-check-square"></i>
+                        </div>
+                        <div class="item descripton">
+                            <p>Exercício de Scroll da Página</p>
+                        </div>
+                        <div class="item link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="pages/scroll/index.html" target="_blank">Acessar conteúdo</a>
+                        </div> 
+                    </div> 
+                </div>               
+                
+            </section>
         </div>
-        <div class="dotSliders">
-            <div class="dot active" onclick="dotFunction(this, 1)"></div>
-            <div class="dot" onclick="dotFunction(this, 2)"></div>
-            <div class="dot" onclick="dotFunction(this, 3)"></div>
-        </div>
+    </main>
 
-        <h2>Lorem Ipsum</h2>
-
-        <p>
-            <em>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu arcu in nibh dignissim sagittis. Sed a viverra erat, sed egestas augue. Duis iaculis odio a placerat ultricies. Nunc fermentum aliquet varius. Sed in tortor tempor, ullamcorper velit nec, ornare risus. Phasellus blandit ultrices velit, vel rutrum eros sodales tincidunt. Maecenas vitae nulla at lectus feugiat faucibus. Donec rhoncus, sem ac porttitor tincidunt, enim arcu blandit ante, dictum accumsan odio dolor feugiat diam. Aenean tristique molestie nunc eu sollicitudin. Quisque id arcu purus. Nullam id semper libero, hendrerit consequat risus. Ut dictum, libero ut sodales lobortis, est nisl molestie nisi, ac sodales risus nisi nec nisi. Quisque ultricies vel purus vitae laoreet.
-            <br><br>
-            Proin ultricies eros sed placerat suscipit. Ut nulla ligula, lacinia ut diam ut, maximus fermentum neque. Sed aliquam eget odio in egestas. Ut viverra pharetra erat, a varius mi tempus ac. Sed magna velit, semper eu ultricies tempor, malesuada vel turpis. Sed mi risus, porta a nisl sed, placerat tristique sapien. Nunc ullamcorper elit id lorem pulvinar, eu egestas elit lobortis.
-            <br><br>
-            Integer facilisis faucibus nisi ut ornare. Integer laoreet eleifend augue eu iaculis. Phasellus in tincidunt orci, non mollis orci. Donec dapibus condimentum faucibus. Cras fermentum sapien in justo blandit sodales. Pellentesque accumsan nulla at felis posuere mollis. Proin commodo vestibulum rutrum. Vestibulum commodo nisl ac leo faucibus, eget convallis elit sagittis. Pellentesque faucibus nec neque non ultrices. Suspendisse semper pretium nulla, quis vehicula ligula pulvinar ac. Quisque metus tortor, ornare a euismod et, eleifend vitae nisl. Nulla arcu lectus, fringilla eget maximus a, dapibus at velit. Vivamus neque mauris, convallis vulputate accumsan a, vulputate ut lectus. Nulla a turpis a nulla egestas volutpat.
-            </em>
-        </p>
-
-        <div class="img_item_center" style="background-image: url('assets/images/banner4.jpg');"></div>
-
-    </section>
-
-    <div id="scroll" class="scroll-button" onclick="click_scroll()">
-        <span class="material-icons">double_arrow</span>
-    </div>
-    
-   
     <script src="assets/js/script.js"></script>
 </body>
 </html>
