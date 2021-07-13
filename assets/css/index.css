@@ -2,41 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Abel', sans-serif;;
 }
 
 body {
-    background-color: #ececfc;
+    background-color: #f5f5f5;
 }
 
-.container {
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 1140px;
+.headline {
+    background-color: #1a1c44;
+    color: #FFF;
     justify-content: center;
-}
-
-.scroll-button {
-    display: none;
-    height: 50px;
-    width: 50px;
-    background-color: #1e1e27;
-    border-radius: 50%;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 999;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-}
-
-.scroll-button span {
-    transform: rotate(-90deg);
 }
 
 header {
@@ -101,75 +77,117 @@ header .logo-title h2 {
     font-size: 15px;
 }
 
-.scroll-page h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-
-}
-
-
-.scroll-page .banners{
-    width: 1100px;
-    height: 400px;
-    display: flex;
-    overflow: hidden;
+.container {
+    max-width: 1200px;
+    height: auto;
     margin: auto;
+ 
 }
 
-.scroll-page .banners .sliders{
-    width: 3300px;
-    height: 400px;
-    display: inline-flex;
-    transition: all 0.5s linear; 
-    margin-left: 0px;
-}   
-
-
-.scroll-page .banners .slide {
-    width: 1100px;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-}
-
-.scroll-page .dotSliders {
+main .container .nav {
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
+}
+
+main .container .nav .curso-title {
+    display: flex;
     align-items: center;
-    width: 600px;
-    height: 30px;
-    margin: auto;
-}
-
-.scroll-page .dotSliders .dot {
-    width: 20px;
-    height: 20px;
-    border: 2px solid gray;
-    border-radius: 50%;
-    margin: 0 5px;
+    justify-content: center;  
+    padding: 20px;   
+    margin-top: 10px;
+    margin-right: 3px;
+    border: 1px solid #1a1c44;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
     cursor: pointer;
+    user-select: none;
+}
+
+main .container .nav .curso-title:hover {
+    background-color: #e9eaff;
+}
+
+main .container .nav .curso-title.active-nav {
+    background-color: #1a1c44;
+    color: #FFF;
+}
+
+main .container .curso {
+    display: none;
+}
+
+main .container .curso.html {
+    display: grid;
+}
+
+main .container .curso .modulos-body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 5px;
+}
+
+main .container .curso .modulos-body .exercicios-template {
+    height: 30px;
+    display: grid;
+    grid-template-columns: 80px 1fr 250px;
+    background-color: #bdbdcc;
 
 }
 
-.scroll-page .dotSliders .dot.active {
-    background-color: rgb(59, 59, 59);
+main .container .curso .modulos-body .exercicios-template:nth-child(even) {
+    background-color: #d6d6e7;
 }
 
-
-
-.scroll-page h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+main .container .curso .modulos-body .exercicios-template:hover {
+    background-color: #6565a1;
+    color: #f9f9f9;
 }
 
-.scroll-page p {
-    text-align: justify;
+main .container .curso .modulos-body .item {
+    display: flex;
+    align-items: center;
 }
 
-.scroll-page .img_item_center {
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    margin: 20px 0;
+main .container .curso .modulos-body .item.modulos {
+    grid-column: 1 / 2;
+    grid-row: 1 / 99;
+    justify-content: center;
+    background-color: #2f3136;
+    color: #f9f9f9;
 }
+
+main .container .curso .modulos-body .item.modulos.headline {
+    background-color: #1a1c44;
+    color: #FFF;
+    justify-content: center;
+}
+
+main .container .curso .modulos-body .item.status {
+    justify-content: center;
+}
+
+main .container .curso .modulos-body .item.status.unfinished {
+    color: #f7a000;
+}
+
+main .container .curso .modulos-body .item.status.sucess {
+    color: #39af48;
+}
+
+main .container .curso .modulos-body .item.link {
+    display: flex;
+}
+
+main .container .curso .modulos-body .item.link i {
+    margin-right: 10px;
+}
+
+main .container .curso .modulos-body .item.link a {
+    text-decoration: none;
+    color: #000;
+}
+
+main .container .curso .modulos-body .exercicios-template:hover a {
+    color: #f9f9f9;
+}
+
