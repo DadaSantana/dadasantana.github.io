@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Testando Fetch</title>
+</head>
+<body>
+    <header>
+        <div class="logo-animation">
+            <img class="img_parte1" src="assets/images/logo_portifolio_parte1.png" alt="">
+            <img class="img_parte2" src="assets/images/logo_portifolio_parte3.png" alt="">
+            <img class="img_parte3" src="assets/images/logo_portifolio_parte2.png" alt="">
+        </div>
+        <div class="logo-title">
+            <h1>Portifolio Pessoal</h1>
+            <h2>Resolução de Exercícios e Projetos da plataforma b7web</h2>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h1>Exercício - Requisição com Fetch() - JSON</h1>
+
+            <div class="select-content">              
+     
+                <div class="listaEstados">
+                    <label for="estados">Estado:</label>
+                    <select name="estados" id="estados" onchange="selectedUF(this)">
+                        <option value="33" class="selectUF">Selecione</option>
+                    </select>
+                </div>
+                <div class="listaCidades">
+                    <label for="estados">Cidade:</label>
+                    <select name="cidades" id="cidades">
+                        <option value="" id="firstChild">Selecione um Estado</option>
+                    </select>
+                </div>  
+                <button type="button" onclick="enviarDados()">Enviar</button>
+            </div>
+            <hr>   
+            <div class="buscar">
+                <h3>Dados Selecionados:</h3>
+                <div id="resultados">
+                    <div class="itemEnviado">
+                        <p class="hiddenp">Não há dados para exibir. Selecione uma cidade e um estado</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="ordenar">
+                <div class="div-ordenar">Ordenar por:</div>
+                <button onclick="ordemAlfabetica()">Ordem Alfática</button>
+                <button onclick="ordemEstados()">Estados</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
